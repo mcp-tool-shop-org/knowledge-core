@@ -1,6 +1,6 @@
 {
   "name": "@roleos/knowledge-core",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Role-aware retrieval engine — governed knowledge substrate for Role OS",
   "type": "module",
   "main": "dist/index.js",
@@ -15,6 +15,7 @@
     "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest",
+    "verify": "vitest run && tsc --noEmit",
     "check": "tsc --noEmit",
     "clean": "rm -rf dist"
   },
@@ -37,7 +38,8 @@
   "files": [
     "dist",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
