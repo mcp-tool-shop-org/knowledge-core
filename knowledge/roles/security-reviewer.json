@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "role_id": "security-reviewer",
+  "label": "Security Reviewer",
+  "mission": "Identify security risks, exploit surfaces, control weaknesses, and mitigation obligations.",
+  "anti_goals": [
+    "Do not optimize for feature velocity over security truth.",
+    "Do not treat vague best-practice language as sufficient evidence.",
+    "Do not drift into product positioning or editorial tone work.",
+    "Do not produce competitive analysis or market framing."
+  ],
+  "vocabulary": {
+    "preferred_terms": [
+      "threat model", "attack surface", "CVE", "OWASP", "misconfiguration",
+      "privilege escalation", "injection", "auth bypass", "secrets exposure",
+      "supply chain", "dependency risk", "access control", "input validation"
+    ],
+    "synonyms": {
+      "vulnerability": ["weakness", "security flaw", "exploit path"],
+      "auth": ["authentication", "authorization", "access control"],
+      "injection": ["command injection", "SQL injection", "XSS", "code injection"]
+    },
+    "boost_phrases": [
+      "known vulnerability", "security advisory", "threat scenario",
+      "sensitive data exposure", "privilege boundary", "trust boundary",
+      "unvalidated input", "broken access control"
+    ],
+    "suppress_phrases": [
+      "brand tone", "positioning", "marketing copy",
+      "user delight", "adoption friction", "competitive wedge"
+    ]
+  },
+  "source_policy": {
+    "preferred_sources": [
+      { "pattern": "owasp", "reason": "Canonical application security guidance", "boost": 2.0 },
+      { "pattern": "cve", "reason": "Known vulnerability records", "boost": 2.0 },
+      { "pattern": "security-review", "reason": "Internal security precedent", "boost": 1.8 },
+      { "pattern": "incident-postmortem", "reason": "Real-world failure evidence", "boost": 1.6 },
+      { "pattern": "threat-model", "reason": "Structured risk analysis", "boost": 1.8 }
+    ],
+    "forbidden_sources": [
+      { "pattern": "marketing", "reason": "Non-security source class" },
+      { "pattern": "competitive-analysis", "reason": "Market framing — not security scope" }
+    ],
+    "trust_tier_boosts": {
+      "authoritative": 2.0,
+      "preferred": 1.4,
+      "general": 1.0,
+      "untrusted": 0.3
+    },
+    "document_type_boosts": {
+      "threat-model": 2.0,
+      "advisory": 1.8,
+      "incident-postmortem": 1.6,
+      "security-audit": 1.8,
+      "dependency-report": 1.4
+    }
+  },
+  "retrieval_policy": {
+    "max_selected_chunks": 8,
+    "lexical_weight": 0.35,
+    "semantic_weight": 0.25,
+    "metadata_weight": 0.2,
+    "rerank_weight": 0.2,
+    "require_source_diversity": true,
+    "max_chunks_per_source": 2,
+    "freshness_max_age_days": 365,
+    "stale_penalty": 0.5,
+    "role_mismatch_penalty": 0.8
+  },
+  "synthesis_policy": {
+    "prioritize": [
+      "risk identification", "exploit plausibility", "impact severity",
+      "mitigation requirements", "control gaps", "trust boundary violations"
+    ],
+    "avoid": [
+      "brand framing", "user delight framing", "generic polish advice",
+      "feature prioritization", "market positioning"
+    ],
+    "required_evidence_kinds": ["reference", "pattern", "precedent"],
+    "citation_style": "inline"
+  },
+  "bridge_roles": ["dependency-auditor", "backend-engineer", "critic-reviewer"],
+  "eval_profile": {
+    "golden_set_id": "security-reviewer-v1",
+    "distinctiveness_checks": [
+      "finds exploit paths not feature gaps",
+      "uses security precedent not product briefs",
+      "avoids market framing entirely",
+      "cites specific vulnerability patterns"
+    ]
+  }
+}

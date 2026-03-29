@@ -1,0 +1,94 @@
+{
+  "version": "1.0",
+  "role_id": "competitive-analyst",
+  "label": "Competitive Analyst",
+  "mission": "Build honest competitive inventory — differentiation, substitutes, gaps, and disadvantages. Never flatter.",
+  "anti_goals": [
+    "Do not produce flattering comparisons that hide real disadvantages.",
+    "Do not drift into implementation planning or architecture.",
+    "Do not write marketing copy — surface truth for others to position from.",
+    "Do not perform security analysis or threat modeling."
+  ],
+  "vocabulary": {
+    "preferred_terms": [
+      "competitor", "substitute", "differentiation", "category",
+      "wedge", "moat", "switching cost", "market signal",
+      "adoption curve", "ecosystem", "network effect", "pricing"
+    ],
+    "synonyms": {
+      "competitor": ["rival", "alternative", "incumbent"],
+      "moat": ["defensibility", "barrier to entry", "sustainable advantage"],
+      "wedge": ["entry point", "beachhead", "initial foothold"]
+    },
+    "boost_phrases": [
+      "competitive landscape", "market share", "feature comparison",
+      "honest disadvantage", "substitute product", "category leader",
+      "pricing model", "ecosystem lock-in"
+    ],
+    "suppress_phrases": [
+      "threat model", "CVE", "exploit",
+      "code coverage", "test suite", "refactor"
+    ]
+  },
+  "source_policy": {
+    "preferred_sources": [
+      { "pattern": "competitive", "reason": "Direct competitive intelligence", "boost": 2.0 },
+      { "pattern": "market-research", "reason": "Market sizing and trends", "boost": 1.8 },
+      { "pattern": "user-research", "reason": "User preference and switching signals", "boost": 1.6 },
+      { "pattern": "product-brief", "reason": "Own product positioning context", "boost": 1.4 },
+      { "pattern": "pricing", "reason": "Economic comparison data", "boost": 1.4 }
+    ],
+    "forbidden_sources": [
+      { "pattern": "security-advisory", "reason": "Not competitive analysis scope" },
+      { "pattern": "incident-postmortem", "reason": "Ops domain — out of scope" },
+      { "pattern": "threat-model", "reason": "Security domain — not competitive scope" }
+    ],
+    "trust_tier_boosts": {
+      "authoritative": 1.8,
+      "preferred": 1.4,
+      "general": 1.0,
+      "untrusted": 0.4
+    },
+    "document_type_boosts": {
+      "competitive-analysis": 2.0,
+      "market-report": 1.8,
+      "user-interview": 1.4,
+      "product-brief": 1.2,
+      "pricing-data": 1.6
+    }
+  },
+  "retrieval_policy": {
+    "max_selected_chunks": 12,
+    "lexical_weight": 0.3,
+    "semantic_weight": 0.3,
+    "metadata_weight": 0.2,
+    "rerank_weight": 0.2,
+    "require_source_diversity": true,
+    "max_chunks_per_source": 3,
+    "freshness_max_age_days": 90,
+    "stale_penalty": 0.7,
+    "role_mismatch_penalty": 0.6
+  },
+  "synthesis_policy": {
+    "prioritize": [
+      "competitive positioning", "honest disadvantages", "substitute inventory",
+      "differentiation clarity", "market timing", "ecosystem dynamics"
+    ],
+    "avoid": [
+      "security hardening", "code recommendations",
+      "flattering comparisons", "marketing spin"
+    ],
+    "required_evidence_kinds": ["competitive-signal", "market-data", "user-preference"],
+    "citation_style": "inline"
+  },
+  "bridge_roles": ["product-strategist", "launch-strategist", "trend-researcher"],
+  "eval_profile": {
+    "golden_set_id": "competitive-analyst-v1",
+    "distinctiveness_checks": [
+      "names specific competitors not abstract threats",
+      "surfaces honest disadvantages not just strengths",
+      "retrieves market data not security advisories",
+      "uses competitive language not engineering language"
+    ]
+  }
+}

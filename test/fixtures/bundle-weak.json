@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "role_id": "product-strategist",
+  "query": {
+    "task_text": "Assess whether we should add real-time collaboration features",
+    "lexical_query": ["collaboration", "real-time", "multi-user"],
+    "semantic_query": ["real-time collaboration feature assessment product strategy"],
+    "applied_overlay_rules": ["boost:product-brief", "boost:user-research"],
+    "applied_filters": [],
+    "generated_at": "2026-03-28T11:00:00Z"
+  },
+  "summary": {
+    "total_candidates": 8,
+    "selected_count": 2,
+    "stale_count": 3,
+    "forbidden_hits": 0,
+    "trust_tier_breakdown": { "authoritative": 0, "preferred": 0, "general": 2, "untrusted": 0 },
+    "source_breakdown": { "blog-post": 1, "forum-thread": 1 },
+    "rerank_strategy": "overlay-weighted"
+  },
+  "selected": [
+    {
+      "chunk_id": "blog-collab-001",
+      "document_id": "collab-patterns-blog",
+      "source_id": "blog-post",
+      "source_type": "external-reference",
+      "title": "Patterns for real-time collaboration",
+      "content": "CRDTs vs OT: choosing the right consistency model for collaborative editing...",
+      "content_type": "paragraph",
+      "scores": { "lexical": 0.6, "semantic": 0.5, "metadata": 0.3, "rerank": 0.4, "final": 0.45 },
+      "reasons_selected": ["best available match — low confidence"],
+      "overlay_hits": [],
+      "metadata": {
+        "trust_tier": "general",
+        "freshness": { "status": "aging", "updated_at": "2025-06-01T00:00:00Z", "max_age_days": 180 },
+        "tags": ["collaboration", "crdt"],
+        "document_type": "blog-post",
+        "domain": "engineering"
+      },
+      "citation": { "reference": "External blog — Collaboration Patterns" }
+    },
+    {
+      "chunk_id": "forum-collab-009",
+      "document_id": "dev-forum-thread-892",
+      "source_id": "forum-thread",
+      "source_type": "external-reference",
+      "title": "Real-time collab discussion thread",
+      "content": "We shipped collab in 3 months but the operational cost was brutal...",
+      "content_type": "paragraph",
+      "scores": { "lexical": 0.5, "semantic": 0.55, "metadata": 0.2, "rerank": 0.35, "final": 0.40 },
+      "reasons_selected": ["relevant user experience signal"],
+      "overlay_hits": [],
+      "metadata": {
+        "trust_tier": "general",
+        "freshness": { "status": "aging", "updated_at": "2025-08-15T00:00:00Z" },
+        "tags": ["collaboration", "operational-cost"],
+        "document_type": "forum-discussion",
+        "domain": "engineering"
+      },
+      "citation": { "reference": "Dev forum thread #892" }
+    }
+  ],
+  "rejected": [
+    { "chunk_id": "old-spec-2023", "reason": "stale" },
+    { "chunk_id": "old-brief-2024a", "reason": "stale" },
+    { "chunk_id": "old-brief-2024b", "reason": "stale" }
+  ],
+  "provenance": {
+    "source_ids": ["blog-post", "forum-thread"],
+    "document_ids": ["collab-patterns-blog", "dev-forum-thread-892"],
+    "trust_posture": "weak",
+    "freshness_posture": "mixed"
+  },
+  "warnings": [
+    { "code": "NO_HIGH_TRUST_MATCH", "message": "No authoritative or preferred sources matched" },
+    { "code": "ONLY_SHARED_CORPUS", "message": "No role-specific overlay hits — all from shared corpus" },
+    { "code": "STALE_DOMINANT", "message": "3 of 5 candidates were stale" }
+  ],
+  "diagnostics": {
+    "latency_ms": 32,
+    "candidate_pool_size": 8,
+    "deduped_count": 0,
+    "dropped_forbidden_count": 0,
+    "dropped_stale_count": 3
+  }
+}

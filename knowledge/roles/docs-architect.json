@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "role_id": "docs-architect",
+  "label": "Docs Architect",
+  "mission": "Design handbook structure, navigation hierarchy, and information flow. Build docs that users actually find.",
+  "anti_goals": [
+    "Do not write the content — design the structure for others to fill.",
+    "Do not perform security analysis or competitive research.",
+    "Do not optimize for completeness over navigability.",
+    "Do not produce marketing copy or launch messaging."
+  ],
+  "vocabulary": {
+    "preferred_terms": [
+      "navigation", "hierarchy", "information architecture", "handbook",
+      "section", "landing page", "sidebar", "breadcrumb", "cross-reference",
+      "getting started", "API reference", "tutorial", "guide", "concept"
+    ],
+    "synonyms": {
+      "docs": ["documentation", "handbook", "reference", "guide"],
+      "navigation": ["nav", "sidebar", "menu", "table of contents"],
+      "tutorial": ["walkthrough", "quickstart", "getting started"]
+    },
+    "boost_phrases": [
+      "information hierarchy", "docs structure", "navigation pattern",
+      "content type", "handbook section", "cross-reference",
+      "progressive disclosure", "task-oriented documentation"
+    ],
+    "suppress_phrases": [
+      "threat model", "exploit", "CVE",
+      "competitive landscape", "market share",
+      "pricing model", "adoption curve"
+    ]
+  },
+  "source_policy": {
+    "preferred_sources": [
+      { "pattern": "docs", "reason": "Existing documentation patterns", "boost": 2.0 },
+      { "pattern": "handbook", "reason": "Prior handbook structures", "boost": 2.0 },
+      { "pattern": "readme", "reason": "Entry-point documentation", "boost": 1.6 },
+      { "pattern": "user-research", "reason": "User navigation evidence", "boost": 1.4 },
+      { "pattern": "support-ticket", "reason": "Where users get lost", "boost": 1.4 }
+    ],
+    "forbidden_sources": [
+      { "pattern": "security-advisory", "reason": "Not docs architecture scope" },
+      { "pattern": "competitive-analysis", "reason": "Not docs architecture scope" },
+      { "pattern": "pricing", "reason": "Not docs architecture scope" }
+    ],
+    "trust_tier_boosts": {
+      "authoritative": 1.8,
+      "preferred": 1.4,
+      "general": 1.0,
+      "untrusted": 0.3
+    },
+    "document_type_boosts": {
+      "handbook": 2.0,
+      "documentation": 1.8,
+      "style-guide": 1.6,
+      "support-pattern": 1.4,
+      "information-architecture": 2.0
+    }
+  },
+  "retrieval_policy": {
+    "max_selected_chunks": 8,
+    "lexical_weight": 0.3,
+    "semantic_weight": 0.3,
+    "metadata_weight": 0.2,
+    "rerank_weight": 0.2,
+    "require_source_diversity": true,
+    "max_chunks_per_source": 2,
+    "freshness_max_age_days": 365,
+    "stale_penalty": 0.4,
+    "role_mismatch_penalty": 0.7
+  },
+  "synthesis_policy": {
+    "prioritize": [
+      "structure clarity", "navigation flow", "content organization",
+      "progressive disclosure", "cross-reference design", "task orientation"
+    ],
+    "avoid": [
+      "security analysis", "competitive positioning",
+      "implementation detail", "marketing language"
+    ],
+    "required_evidence_kinds": ["structural-precedent", "navigation-pattern", "user-friction"],
+    "citation_style": "footnote"
+  },
+  "bridge_roles": ["metadata-curator", "brand-guardian", "support-triage-lead"],
+  "eval_profile": {
+    "golden_set_id": "docs-architect-v1",
+    "distinctiveness_checks": [
+      "designs structure not content",
+      "retrieves documentation patterns not security reports",
+      "uses information architecture language",
+      "surfaces where users get lost"
+    ]
+  }
+}

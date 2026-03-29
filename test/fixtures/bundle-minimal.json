@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "role_id": "security-reviewer",
+  "query": {
+    "task_text": "Review the auth middleware for injection risks",
+    "lexical_query": ["auth", "middleware", "injection", "bypass"],
+    "semantic_query": ["authentication middleware security vulnerabilities"],
+    "applied_overlay_rules": ["boost:owasp", "boost:cve", "suppress:marketing"],
+    "applied_filters": [
+      { "field": "excluded_roles", "op": "not_in", "value": ["security-reviewer"] }
+    ],
+    "generated_at": "2026-03-28T10:00:00Z"
+  },
+  "summary": {
+    "total_candidates": 24,
+    "selected_count": 3,
+    "stale_count": 1,
+    "forbidden_hits": 2,
+    "trust_tier_breakdown": { "authoritative": 1, "preferred": 2, "general": 0, "untrusted": 0 },
+    "source_breakdown": { "owasp-guide": 1, "internal-review": 2 },
+    "rerank_strategy": "overlay-weighted"
+  },
+  "selected": [
+    {
+      "chunk_id": "owasp-auth-001",
+      "document_id": "owasp-top10-2025",
+      "source_id": "owasp-guide",
+      "source_type": "external-reference",
+      "title": "OWASP Top 10 — Broken Access Control",
+      "content": "Broken access control is the most common critical web application security risk...",
+      "content_type": "paragraph",
+      "scores": { "lexical": 0.8, "semantic": 0.7, "metadata": 0.9, "rerank": 0.85, "final": 0.82 },
+      "reasons_selected": ["high lexical match on 'auth'", "authoritative trust tier", "overlay boost: owasp"],
+      "overlay_hits": ["boost:owasp"],
+      "metadata": {
+        "trust_tier": "authoritative",
+        "freshness": { "status": "fresh", "updated_at": "2025-11-01T00:00:00Z", "max_age_days": 365 },
+        "tags": ["owasp", "access-control", "authentication"],
+        "applicable_roles": ["security-reviewer", "backend-engineer"],
+        "document_type": "advisory",
+        "domain": "security"
+      },
+      "citation": {
+        "reference": "OWASP Top 10 2025 — A01 Broken Access Control",
+        "locator": "section-a01"
+      }
+    },
+    {
+      "chunk_id": "review-auth-042",
+      "document_id": "auth-review-2026q1",
+      "source_id": "internal-review",
+      "source_type": "internal-document",
+      "title": "Auth middleware review — Q1 2026",
+      "content": "Session tokens stored in localStorage without HttpOnly flag...",
+      "content_type": "paragraph",
+      "scores": { "lexical": 0.9, "semantic": 0.6, "metadata": 0.8, "rerank": 0.75, "final": 0.77 },
+      "reasons_selected": ["exact match on 'auth middleware'", "internal security precedent"],
+      "overlay_hits": ["boost:security-review"],
+      "metadata": {
+        "trust_tier": "preferred",
+        "freshness": { "status": "fresh", "updated_at": "2026-01-15T00:00:00Z" },
+        "tags": ["auth", "session", "localStorage"],
+        "applicable_roles": ["security-reviewer"],
+        "document_type": "security-audit",
+        "domain": "security"
+      },
+      "citation": {
+        "reference": "Internal Auth Review Q1-2026",
+        "locator": "finding-3"
+      }
+    },
+    {
+      "chunk_id": "review-auth-043",
+      "document_id": "auth-review-2026q1",
+      "source_id": "internal-review",
+      "source_type": "internal-document",
+      "title": "Auth middleware review — CSRF protections",
+      "content": "CSRF token validation missing on state-changing POST endpoints...",
+      "content_type": "paragraph",
+      "scores": { "lexical": 0.7, "semantic": 0.65, "metadata": 0.8, "rerank": 0.7, "final": 0.71 },
+      "reasons_selected": ["related auth finding from same review"],
+      "overlay_hits": ["boost:security-review"],
+      "metadata": {
+        "trust_tier": "preferred",
+        "freshness": { "status": "fresh", "updated_at": "2026-01-15T00:00:00Z" },
+        "tags": ["csrf", "auth", "post"],
+        "applicable_roles": ["security-reviewer", "backend-engineer"],
+        "document_type": "security-audit",
+        "domain": "security"
+      },
+      "citation": {
+        "reference": "Internal Auth Review Q1-2026",
+        "locator": "finding-7"
+      }
+    }
+  ],
+  "rejected": [
+    { "chunk_id": "marketing-blog-012", "reason": "forbidden_source", "notes": "marketing source excluded by overlay" },
+    { "chunk_id": "competitive-saas-005", "reason": "forbidden_source", "notes": "competitive-analysis source excluded" },
+    { "chunk_id": "old-review-2023", "reason": "stale", "notes": "exceeded freshness_max_age_days (365)" }
+  ],
+  "provenance": {
+    "source_ids": ["owasp-guide", "internal-review"],
+    "document_ids": ["owasp-top10-2025", "auth-review-2026q1"],
+    "trust_posture": "strong",
+    "freshness_posture": "fresh"
+  },
+  "warnings": [],
+  "diagnostics": {
+    "latency_ms": 47,
+    "candidate_pool_size": 24,
+    "deduped_count": 2,
+    "dropped_forbidden_count": 2,
+    "dropped_stale_count": 1
+  }
+}
