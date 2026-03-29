@@ -1,0 +1,416 @@
+{
+  "version": "1.0",
+  "description": "Handcrafted fixture corpus designed to stress role divergence. Each chunk is tagged so the 5 pilot overlays MUST retrieve different evidence for overlapping tasks.",
+  "documents": [
+    {
+      "document_id": "owasp-top10-2025",
+      "source_id": "owasp-guide",
+      "title": "OWASP Top 10 2025 — Application Security Risks",
+      "document_type": "advisory",
+      "domain": "security",
+      "trust_tier": "authoritative",
+      "updated_at": "2025-11-01T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "owasp-a01-access",
+          "content": "Broken access control is the most critical web application security risk. 94% of applications tested had some form of broken access control. Common weaknesses include violation of least privilege, bypassing access control checks by modifying the URL, API request, or internal data, and permitting viewing or editing someone else's account.",
+          "content_type": "paragraph",
+          "tags": ["owasp", "access-control", "broken-auth", "web-security"],
+          "applicable_roles": ["security-reviewer", "backend-engineer"]
+        },
+        {
+          "chunk_id": "owasp-a03-injection",
+          "content": "Injection flaws such as SQL, NoSQL, OS command, and LDAP injection occur when untrusted data is sent to an interpreter as part of a command or query. The attacker's hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization. Input validation, parameterized queries, and LIMIT clauses reduce impact.",
+          "content_type": "paragraph",
+          "tags": ["owasp", "injection", "sql-injection", "input-validation"],
+          "applicable_roles": ["security-reviewer", "backend-engineer"]
+        }
+      ]
+    },
+    {
+      "document_id": "internal-auth-review-q1",
+      "source_id": "internal-security-review",
+      "title": "Auth Middleware Security Review — Q1 2026",
+      "document_type": "security-audit",
+      "domain": "security",
+      "trust_tier": "preferred",
+      "updated_at": "2026-01-15T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "auth-review-session",
+          "content": "Session tokens are stored in localStorage without HttpOnly flag, making them accessible to XSS attacks. Recommendation: migrate to HttpOnly secure cookies with SameSite=Strict. Impact: HIGH — any XSS vulnerability becomes a session hijack vector.",
+          "content_type": "paragraph",
+          "tags": ["session", "localStorage", "xss", "cookies", "auth"],
+          "applicable_roles": ["security-reviewer"]
+        },
+        {
+          "chunk_id": "auth-review-csrf",
+          "content": "CSRF token validation is missing on 4 of 12 state-changing POST endpoints. The /api/settings, /api/transfer, /api/delete, and /api/invite endpoints accept requests without origin verification. Recommendation: enforce CSRF tokens on all state-changing operations.",
+          "content_type": "paragraph",
+          "tags": ["csrf", "auth", "endpoint", "validation"],
+          "applicable_roles": ["security-reviewer", "backend-engineer"]
+        }
+      ]
+    },
+    {
+      "document_id": "product-brief-2026q1",
+      "source_id": "product-brief",
+      "title": "Product Direction — Q1 2026",
+      "document_type": "product-brief",
+      "domain": "product",
+      "trust_tier": "authoritative",
+      "updated_at": "2026-01-05T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "brief-collaboration",
+          "content": "Real-time collaboration is the highest-leverage feature for Q2. User research shows 68% of target users work in teams of 3-8. The wedge is shared editing — not real-time cursors, but conflict-free document merging. Estimated adoption lift: 2.3x for team plans vs solo.",
+          "content_type": "paragraph",
+          "tags": ["collaboration", "real-time", "user-value", "adoption", "team"],
+          "applicable_roles": ["product-strategist", "competitive-analyst"]
+        },
+        {
+          "chunk_id": "brief-scope-tradeoff",
+          "content": "Tradeoff: building collaboration delays the CLI improvements by one quarter. CLI power users (22% of base, 48% of revenue) may churn if CLI stagnates. Decision: ship collaboration in Q2 but allocate 20% of sprint capacity to CLI maintenance to prevent regression.",
+          "content_type": "paragraph",
+          "tags": ["tradeoff", "scope", "cli", "collaboration", "churn-risk"],
+          "applicable_roles": ["product-strategist"]
+        }
+      ]
+    },
+    {
+      "document_id": "user-research-collab-2026",
+      "source_id": "user-research",
+      "title": "User Research — Collaboration Needs Assessment",
+      "document_type": "user-research",
+      "domain": "product",
+      "trust_tier": "preferred",
+      "updated_at": "2025-12-10T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "research-team-friction",
+          "content": "Interview finding: teams currently export, email, and re-import to share work. Average round-trip: 23 minutes per collaboration cycle. Biggest frustration is version conflicts — 7 of 12 participants reported losing work to overwrites. Job-to-be-done: 'Let me see what my team changed without breaking what I did.'",
+          "content_type": "paragraph",
+          "tags": ["user-research", "collaboration", "friction", "version-conflict", "jtbd"],
+          "applicable_roles": ["product-strategist", "ux-researcher"]
+        },
+        {
+          "chunk_id": "research-solo-preference",
+          "content": "Counter-signal: 4 of 12 participants explicitly said they prefer working solo and find real-time presence distracting. 'I don't want to see other cursors. I want to merge when I'm ready.' This suggests async collaboration may be higher-value than synchronous for this segment.",
+          "content_type": "paragraph",
+          "tags": ["user-research", "collaboration", "solo-preference", "async"],
+          "applicable_roles": ["product-strategist", "ux-researcher"]
+        }
+      ]
+    },
+    {
+      "document_id": "competitor-collab-landscape",
+      "source_id": "competitive-analysis",
+      "title": "Competitive Landscape — Collaboration Features",
+      "document_type": "competitive-analysis",
+      "domain": "market",
+      "trust_tier": "preferred",
+      "updated_at": "2026-02-01T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "comp-figma-model",
+          "content": "Figma dominates real-time collaboration in design tools with multiplayer cursors and live component editing. Their moat is network effect: once a team adopts, switching costs are extreme because all shared libraries, component systems, and plugin ecosystems are locked in. Honest disadvantage for us: we have zero multiplayer infrastructure.",
+          "content_type": "paragraph",
+          "tags": ["competitor", "figma", "collaboration", "moat", "network-effect", "switching-cost"],
+          "applicable_roles": ["competitive-analyst"]
+        },
+        {
+          "chunk_id": "comp-notion-async",
+          "content": "Notion's collaboration model is async-first with optional real-time. Their wedge was 'one tool for docs, wikis, and project tracking' rather than real-time editing. Pricing: free for personal, $10/user/mo for teams. Key weakness: poor offline support and slow performance on large workspaces.",
+          "content_type": "paragraph",
+          "tags": ["competitor", "notion", "async", "pricing", "weakness", "collaboration"],
+          "applicable_roles": ["competitive-analyst"]
+        },
+        {
+          "chunk_id": "comp-linear-focus",
+          "content": "Linear chose NOT to build real-time document collaboration, focusing instead on speed and keyboard-first UX. Their bet: collaboration happens in the issue tracker, not in shared docs. Market signal: you can win without real-time collab if your core workflow is strong enough.",
+          "content_type": "paragraph",
+          "tags": ["competitor", "linear", "anti-pattern", "focus", "market-signal"],
+          "applicable_roles": ["competitive-analyst", "product-strategist"]
+        }
+      ]
+    },
+    {
+      "document_id": "decision-log-2025",
+      "source_id": "decision-log",
+      "title": "Product Decision Log — 2025",
+      "document_type": "decision-record",
+      "domain": "product",
+      "trust_tier": "authoritative",
+      "updated_at": "2025-12-20T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "decision-api-first",
+          "content": "Decision D-2025-08: Ship API before UI for all new features. Rationale: API-first lets power users adopt immediately via CLI while UI catches up. Evidence: CLI users converted 3.2x faster than UI-only users in Q3 launch.",
+          "content_type": "paragraph",
+          "tags": ["decision", "api-first", "cli", "adoption", "strategy"],
+          "applicable_roles": ["product-strategist"]
+        },
+        {
+          "chunk_id": "decision-no-realtime-q3",
+          "content": "Decision D-2025-11: Defer real-time collaboration to Q2 2026. Rationale: infrastructure cost exceeds available budget in Q4. WebSocket scaling would require $40K/year in additional infrastructure. Revisit with Q1 revenue numbers.",
+          "content_type": "paragraph",
+          "tags": ["decision", "collaboration", "deferred", "budget", "infrastructure"],
+          "applicable_roles": ["product-strategist", "competitive-analyst"]
+        }
+      ]
+    },
+    {
+      "document_id": "handbook-structure-guide",
+      "source_id": "docs-handbook",
+      "title": "Handbook Structure Guide — Best Practices",
+      "document_type": "documentation",
+      "domain": "docs",
+      "trust_tier": "preferred",
+      "updated_at": "2025-10-15T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "handbook-nav-pattern",
+          "content": "Effective handbook navigation follows the 3-click rule: any page should be reachable within 3 clicks from the landing page. Use flat hierarchies with clear section labels. Avoid deep nesting — users abandon documentation when they can't find content within 30 seconds.",
+          "content_type": "paragraph",
+          "tags": ["handbook", "navigation", "information-architecture", "3-click-rule"],
+          "applicable_roles": ["docs-architect"]
+        },
+        {
+          "chunk_id": "handbook-progressive",
+          "content": "Progressive disclosure in documentation: lead with the 80% use case, then reveal advanced options. Structure: Getting Started → Core Concepts → Guides → API Reference → Troubleshooting. Each section should be self-contained — don't force linear reading.",
+          "content_type": "paragraph",
+          "tags": ["handbook", "progressive-disclosure", "structure", "sections"],
+          "applicable_roles": ["docs-architect"]
+        }
+      ]
+    },
+    {
+      "document_id": "support-patterns-q4",
+      "source_id": "support-data",
+      "title": "Support Pattern Analysis — Q4 2025",
+      "document_type": "support-pattern",
+      "domain": "docs",
+      "trust_tier": "preferred",
+      "updated_at": "2025-12-28T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "support-lost-users",
+          "content": "Top 3 support topics in Q4: (1) 'How do I configure auth?' — 34% of tickets. Users cannot find the auth configuration page because it's buried under Settings > Advanced > Security > Auth Provider. (2) 'API rate limits not documented' — 18%. (3) 'Getting started guide assumes prior knowledge' — 12%.",
+          "content_type": "paragraph",
+          "tags": ["support", "navigation", "auth-config", "docs-gap", "user-friction"],
+          "applicable_roles": ["docs-architect", "support-triage-lead"]
+        }
+      ]
+    },
+    {
+      "document_id": "quality-standards-v2",
+      "source_id": "quality-standard",
+      "title": "Product Quality Standards v2.0",
+      "document_type": "quality-standard",
+      "domain": "quality",
+      "trust_tier": "authoritative",
+      "updated_at": "2026-01-10T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "quality-acceptance",
+          "content": "Acceptance criteria for all shipped artifacts: (1) Every claim must cite evidence. (2) Every artifact must pass its role's quality bar. (3) No artifact may skip sections marked 'required' in its contract. (4) Critic verdict must be 'Accept' or 'Accept-with-notes' — 'Reject' blocks release.",
+          "content_type": "paragraph",
+          "tags": ["quality-standard", "acceptance-criteria", "evidence", "verdict"],
+          "applicable_roles": ["critic-reviewer"]
+        },
+        {
+          "chunk_id": "quality-rejection-grounds",
+          "content": "Grounds for rejection: (1) Missing required sections in artifact. (2) Claims without evidence. (3) Scope drift — artifact addresses work not in the original packet. (4) Contract violation — role exceeded its mandate. (5) Incomplete handoff — next role cannot proceed from what was delivered.",
+          "content_type": "paragraph",
+          "tags": ["quality-standard", "rejection", "grounds", "contract-violation"],
+          "applicable_roles": ["critic-reviewer"]
+        }
+      ]
+    },
+    {
+      "document_id": "review-precedent-log",
+      "source_id": "review-precedent",
+      "title": "Critic Review Precedent Log",
+      "document_type": "review-verdict",
+      "domain": "quality",
+      "trust_tier": "preferred",
+      "updated_at": "2026-02-20T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "precedent-reject-drift",
+          "content": "Review R-2026-04: REJECTED. Security Reviewer artifact included feature prioritization recommendations that exceeded its mandate. The security review was thorough, but the final section proposed a product roadmap change. Verdict: strip the roadmap section and re-submit with security-only findings.",
+          "content_type": "paragraph",
+          "tags": ["review-precedent", "rejection", "scope-drift", "mandate-violation"],
+          "applicable_roles": ["critic-reviewer"]
+        },
+        {
+          "chunk_id": "precedent-accept-notes",
+          "content": "Review R-2026-07: ACCEPT WITH NOTES. Docs Architect handbook structure was well-organized but the API Reference section lacked cross-references to related Guides. Notes: add 'See also' links before publishing. Quality bar met — structure is sound, only minor navigation gaps.",
+          "content_type": "paragraph",
+          "tags": ["review-precedent", "accept", "docs", "cross-reference", "quality-bar"],
+          "applicable_roles": ["critic-reviewer", "docs-architect"]
+        }
+      ]
+    },
+    {
+      "document_id": "failure-patterns-catalog",
+      "source_id": "failure-patterns",
+      "title": "Known Failure Patterns Catalog",
+      "document_type": "failure-pattern",
+      "domain": "quality",
+      "trust_tier": "preferred",
+      "updated_at": "2026-01-30T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "failure-rubber-stamp",
+          "content": "Failure pattern F-001: Rubber-stamp review. Critic accepts work without checking evidence chain. Symptom: verdict says 'looks good' without citing specific sections or evidence items. Root cause: time pressure or lack of review precedent to compare against.",
+          "content_type": "paragraph",
+          "tags": ["failure-pattern", "rubber-stamp", "review", "evidence-gap"],
+          "applicable_roles": ["critic-reviewer"]
+        },
+        {
+          "chunk_id": "failure-role-blur",
+          "content": "Failure pattern F-003: Role blur. A role produces work that belongs to a different role's mandate. Common example: Backend Engineer includes UX recommendations. Security Reviewer proposes product strategy. Cause: weak role constitutions or missing anti-goals.",
+          "content_type": "paragraph",
+          "tags": ["failure-pattern", "role-blur", "mandate", "anti-goals"],
+          "applicable_roles": ["critic-reviewer", "product-strategist"]
+        }
+      ]
+    },
+    {
+      "document_id": "incident-postmortem-auth",
+      "source_id": "incident-postmortem",
+      "title": "Incident Postmortem — Auth Token Leak (2025-09)",
+      "document_type": "incident-postmortem",
+      "domain": "security",
+      "trust_tier": "preferred",
+      "updated_at": "2025-09-15T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "incident-token-leak",
+          "content": "Root cause: API auth tokens were logged in plaintext to application stdout, captured by log aggregator, and accessible to anyone with dashboard access. Impact: 340 user tokens potentially exposed over 6 days. Fix: redact all auth headers in logging middleware. Lesson: never trust logging pipelines to be access-controlled.",
+          "content_type": "paragraph",
+          "tags": ["incident", "auth", "token-leak", "logging", "plaintext"],
+          "applicable_roles": ["security-reviewer"],
+          "excluded_roles": ["competitive-analyst", "docs-architect"]
+        }
+      ]
+    },
+    {
+      "document_id": "market-report-collab-2026",
+      "source_id": "market-research",
+      "title": "Collaboration Tools Market Report 2026",
+      "document_type": "market-report",
+      "domain": "market",
+      "trust_tier": "general",
+      "updated_at": "2026-01-20T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "market-size-collab",
+          "content": "The collaboration software market is projected at $28.3B in 2026, growing 12.4% YoY. Fastest-growing segment: developer collaboration tools (+22% YoY). Key trend: async-first collaboration gaining over synchronous. Enterprise buyers increasingly value audit trails and permissions over real-time features.",
+          "content_type": "paragraph",
+          "tags": ["market", "collaboration", "market-size", "growth", "developer-tools"],
+          "applicable_roles": ["competitive-analyst", "product-strategist"]
+        }
+      ]
+    },
+    {
+      "document_id": "old-strategy-2024",
+      "source_id": "archive",
+      "title": "Product Strategy — 2024 (ARCHIVED)",
+      "document_type": "strategy-memo",
+      "domain": "product",
+      "trust_tier": "general",
+      "updated_at": "2024-03-01T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "old-strategy-mobile",
+          "content": "2024 bet: mobile-first strategy. Build native iOS and Android apps before improving the web experience. Rationale: mobile usage growing 3x. NOTE: This strategy was abandoned in Q3 2024 after mobile DAU plateaued at 4% of total usage.",
+          "content_type": "paragraph",
+          "tags": ["strategy", "mobile", "abandoned", "outdated"],
+          "applicable_roles": ["product-strategist"]
+        }
+      ]
+    },
+    {
+      "document_id": "marketing-launch-guide",
+      "source_id": "marketing",
+      "title": "Launch Messaging Guide — Q1 2026",
+      "document_type": "marketing-guide",
+      "domain": "marketing",
+      "trust_tier": "general",
+      "updated_at": "2026-01-08T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "marketing-positioning",
+          "content": "Positioning statement: 'The developer workspace that thinks with you.' Key messages: (1) AI-native from day one. (2) Works where you work — CLI, IDE, browser. (3) Your data stays yours. Tone: confident, technical, no hype. Avoid: 'revolutionary', 'game-changing', 'paradigm shift'.",
+          "content_type": "paragraph",
+          "tags": ["marketing", "positioning", "messaging", "brand"],
+          "applicable_roles": ["launch-copywriter"],
+          "excluded_roles": ["security-reviewer"]
+        }
+      ]
+    },
+    {
+      "document_id": "docs-style-guide",
+      "source_id": "docs-handbook",
+      "title": "Documentation Style Guide",
+      "document_type": "style-guide",
+      "domain": "docs",
+      "trust_tier": "preferred",
+      "updated_at": "2025-11-20T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "style-task-oriented",
+          "content": "All documentation should be task-oriented. Every page answers: 'What can the user DO after reading this?' Bad: 'The authentication module provides...' Good: 'Set up authentication in 3 steps.' Use imperative mood for headings. Include expected outcomes after each step.",
+          "content_type": "paragraph",
+          "tags": ["style-guide", "task-oriented", "documentation", "writing"],
+          "applicable_roles": ["docs-architect"]
+        }
+      ]
+    },
+    {
+      "document_id": "threat-model-api",
+      "source_id": "threat-model",
+      "title": "API Threat Model — v2.1",
+      "document_type": "threat-model",
+      "domain": "security",
+      "trust_tier": "authoritative",
+      "updated_at": "2026-02-10T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "threat-api-surface",
+          "content": "Trust boundary: API gateway is the primary trust boundary. All requests from external clients are untrusted. Internal service-to-service calls use mTLS but share a single CA — compromise of one service certificate enables lateral movement. Recommendation: implement per-service certificate pinning.",
+          "content_type": "paragraph",
+          "tags": ["threat-model", "api", "trust-boundary", "mtls", "lateral-movement"],
+          "applicable_roles": ["security-reviewer"]
+        },
+        {
+          "chunk_id": "threat-data-flow",
+          "content": "Sensitive data flow: user credentials → API gateway → auth service → token store (Redis). Token store is not encrypted at rest. Tokens expire after 24h but refresh tokens are indefinite. Attack scenario: Redis compromise yields all active sessions. Mitigation: encrypt token store, add refresh token rotation.",
+          "content_type": "paragraph",
+          "tags": ["threat-model", "data-flow", "redis", "token", "encryption"],
+          "applicable_roles": ["security-reviewer"]
+        }
+      ]
+    },
+    {
+      "document_id": "pricing-comparison-2026",
+      "source_id": "pricing-data",
+      "title": "Pricing Comparison — Developer Collaboration Tools",
+      "document_type": "pricing-data",
+      "domain": "market",
+      "trust_tier": "general",
+      "updated_at": "2026-02-15T00:00:00Z",
+      "chunks": [
+        {
+          "chunk_id": "pricing-tier-comparison",
+          "content": "Competitor pricing tiers: GitHub Copilot ($19/mo individual, $39/mo business). Cursor ($20/mo pro, $40/mo business). Notion ($10/user/mo teams). Linear ($8/user/mo). Our current: $0 (free, open source core). Honest disadvantage: free makes monetization unclear to enterprise buyers who equate price with reliability.",
+          "content_type": "paragraph",
+          "tags": ["pricing", "competitor", "comparison", "monetization", "enterprise"],
+          "applicable_roles": ["competitive-analyst"]
+        }
+      ]
+    }
+  ]
+}
