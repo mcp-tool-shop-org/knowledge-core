@@ -1,0 +1,730 @@
+{
+  "boundaries": [
+    {
+      "dynamicReads": 0,
+      "dynamicSpawns": 0,
+      "dynamicSpawnsInTests": 0,
+      "dynamicWrites": 0,
+      "entryPoints": [],
+      "externals": 0,
+      "files": [
+        {
+          "hash": "e745631f46a036ea69702a3e05ac5c031c1d0655b7fe5c2566a29f0196b748b2",
+          "path": ".github/workflows/ci.yml"
+        },
+        {
+          "hash": "4eb81eeb113bdba84a09846e4b80ab63d20507cb41935566c110e37f99afe899",
+          "path": ".github/workflows/pages.yml"
+        }
+      ],
+      "globs": [
+        ".github/**"
+      ],
+      "importConfidence": "full",
+      "name": ".github",
+      "origin": "authored",
+      "role": "config",
+      "testedBy": 0,
+      "unresolvedSites": 0
+    },
+    {
+      "dynamicReads": 0,
+      "dynamicSpawns": 0,
+      "dynamicSpawnsInTests": 0,
+      "dynamicWrites": 0,
+      "entryPoints": [],
+      "externals": 0,
+      "files": [
+        {
+          "hash": "31e6bd37bfdaf3784f6da67dcc51f8c78cc458bb06ee61f0f2df4dc74f526dbe",
+          "path": "knowledge/corpus/fixtures/corpus-divergence.json"
+        },
+        {
+          "hash": "e7ae48b9f934f6957bb794638b3a9ce0c4820b8e9cf3bde37a61b5db1f33342b",
+          "path": "knowledge/roles/competitive-analyst.json"
+        },
+        {
+          "hash": "e8a62df96856fc10ea3fa0dee37e4c49fb262e1a83614651c7e0ee0b4d79ce27",
+          "path": "knowledge/roles/critic-reviewer.json"
+        },
+        {
+          "hash": "1ead85173b2d305de831ca4f3ba7b6c90eb3ee10a42f539314a1348cd6690542",
+          "path": "knowledge/roles/docs-architect.json"
+        },
+        {
+          "hash": "2d87df0db9a53c616480161e92f2c8fec31119db43bf2ae38f8b5a430a360202",
+          "path": "knowledge/roles/product-strategist.json"
+        },
+        {
+          "hash": "e3b0d7ef7048ef594e5643b067df6e8b1c4d7d0e4ec6c6d435b4314f512eeaf7",
+          "path": "knowledge/roles/security-reviewer.json"
+        }
+      ],
+      "globs": [
+        "knowledge/**"
+      ],
+      "importConfidence": "full",
+      "name": "knowledge",
+      "origin": "authored",
+      "role": "config",
+      "testedBy": 0,
+      "unresolvedSites": 0
+    },
+    {
+      "dynamicReads": 0,
+      "dynamicSpawns": 0,
+      "dynamicSpawnsInTests": 0,
+      "dynamicWrites": 0,
+      "entryPoints": [],
+      "externals": 0,
+      "files": [
+        {
+          "hash": "d485565c8e7455bb205ad30ea12f10eb5c41e1ee153cbbb3ef5a720f4d2e9a52",
+          "path": ".gitignore"
+        },
+        {
+          "hash": "c6630ac241132de5a5ba9024db91ac15ec08b79afc7bd90a97579bf0903a9f41",
+          "path": "CHANGELOG.md"
+        },
+        {
+          "hash": "5ae6b3c8f446f0a7cb95176e4dadb91b68aaffb16b3be09f64f5de248b6a973a",
+          "path": "LICENSE"
+        },
+        {
+          "hash": "8b73a2f7b2da40122b16695ccb75356b46ef3ffb8be7771b3dfcabb694d73921",
+          "path": "README.es.md"
+        },
+        {
+          "hash": "25e1c2350a3e42d21b29ed2552a2c0ea8b75301e3a1588306487614e004d5397",
+          "path": "README.fr.md"
+        },
+        {
+          "hash": "b8999461c04c81702041fe53533f2e8cd8ecc18da361896584dc61862c8121a4",
+          "path": "README.hi.md"
+        },
+        {
+          "hash": "e618556235eeb48e753c5e3e53c8250928756391db0f69fdf482f5d841caac0b",
+          "path": "README.it.md"
+        },
+        {
+          "hash": "91c80d6018d186387c115cba76c8fc2324248c389e3301efbb2cd81112334af5",
+          "path": "README.ja.md"
+        },
+        {
+          "hash": "a4d1d01f924c4631e87a5cdb9dee466f583ee2d788857799e7477d249ba99863",
+          "path": "README.md"
+        },
+        {
+          "hash": "94d0f9eda2e827baa939a3312c59db6458fdab701f760b6bd3ea36b1e59d8840",
+          "path": "README.pt-BR.md"
+        },
+        {
+          "hash": "619f7866849e7a7ba549097c29780a42e8f17f99e8ecb570a3e0c261f80ad6f5",
+          "path": "README.zh.md"
+        },
+        {
+          "hash": "3c97799787538a61aed96675d7e9a21bf189a77e9bd7afa414113c5aa7840dfc",
+          "path": "SCORECARD.md"
+        },
+        {
+          "hash": "b1fd42a5e88a6b14552bf4351e23f396e689c127d763e821d670af99fd2929b6",
+          "path": "SECURITY.md"
+        },
+        {
+          "hash": "2387d3ae60e85e6d4901b6cb0a1957adb02eabce8e37897b14da50f5c91d4e89",
+          "path": "SHIP_GATE.md"
+        },
+        {
+          "hash": "cac25c0d01c8995d20d70cc52ab8225868ed56d37c1f620679c2b2e203309675",
+          "path": "package-lock.json"
+        },
+        {
+          "hash": "e63d4a1dc5588c5f37ab291c772b58b9a2b51c9c091a8eaee87c91e12aa8a9eb",
+          "path": "package.json"
+        },
+        {
+          "hash": "7ae065f3f1e8dea5b89d567e08632349ad4fae5f80d7412bef5777cf7a8b5dfa",
+          "path": "tsconfig.json"
+        }
+      ],
+      "globs": [
+        "*"
+      ],
+      "importConfidence": "full",
+      "name": "root",
+      "origin": "authored",
+      "role": "config",
+      "testedBy": 0,
+      "unresolvedSites": 0
+    },
+    {
+      "dynamicReads": 0,
+      "dynamicSpawns": 0,
+      "dynamicSpawnsInTests": 0,
+      "dynamicWrites": 0,
+      "entryPoints": [],
+      "externals": 0,
+      "files": [
+        {
+          "hash": "ce3023d1ef02353949b3d15f8c97b2df05b658e432c821c55700deaf58eb04c5",
+          "path": "site/astro.config.mjs"
+        },
+        {
+          "hash": "b5578baf42cab82e5e7b451b6992cb929aeb6ff8d02d8e11ab690e6f67fea144",
+          "path": "site/package-lock.json"
+        },
+        {
+          "hash": "0fe0343f8ddb0628d954129b02a72b3b2c8f8f884b1380c5567403c4f55942f8",
+          "path": "site/package.json"
+        },
+        {
+          "hash": "ec030f2e4bf6dc57eaca075d390c228b3212cf29db267e32ef92e110de1acdcc",
+          "path": "site/src/content.config.ts"
+        },
+        {
+          "hash": "c2f3e58588be8259ba73fa6013dfac0f85f96fdd07bddf1bcc21b6c67a060a7c",
+          "path": "site/src/content/docs/handbook/architecture.md"
+        },
+        {
+          "hash": "742bdf1934d29a355aa49b81b6a40c56ae12c55a946d1369504a50997d092f8c",
+          "path": "site/src/content/docs/handbook/getting-started.md"
+        },
+        {
+          "hash": "5eb08a3f723b3813ee1f7521e9d9a38130547c504fe80c0f4d63e7437dd463fc",
+          "path": "site/src/content/docs/handbook/index.md"
+        },
+        {
+          "hash": "a961f94a5774f1a7fd94504ec6c712868363b8f551611ea5bf33364503aa5a64",
+          "path": "site/src/content/docs/handbook/overlays.md"
+        },
+        {
+          "hash": "e4056590c2342f88665388a1b850fc50057b4bbd1b92aebb7ef5dbf6d8b682dc",
+          "path": "site/src/content/docs/handbook/reference.md"
+        },
+        {
+          "hash": "a699ad78a6d27d6864ccfe4c3a4a01993aca28ecb4a3d20893f37db9f9b1a522",
+          "path": "site/src/pages/index.astro"
+        },
+        {
+          "hash": "76c5da2cbb2ba161573c5b54a3b489d5b721f1358334325205e0422bb133e1e9",
+          "path": "site/src/site-config.ts"
+        },
+        {
+          "hash": "5995279a40a9a63426a93feec129006b261cc7200426a398914d0317722ef19b",
+          "path": "site/src/styles/global.css"
+        },
+        {
+          "hash": "9699457f0a7a31093d48944cabb11812852f0ce480732986b04896d53d29c4ca",
+          "path": "site/src/styles/starlight-custom.css"
+        },
+        {
+          "hash": "61fc24492db9aef7ec38eb91cfeebaef96155014bb5f22648fd8ed2327c6cae2",
+          "path": "site/tsconfig.json"
+        }
+      ],
+      "globs": [
+        "site/**"
+      ],
+      "importConfidence": "full",
+      "name": "site",
+      "origin": "authored",
+      "role": "site",
+      "testedBy": 0,
+      "unresolvedSites": 0
+    },
+    {
+      "dynamicReads": 1,
+      "dynamicSpawns": 0,
+      "dynamicSpawnsInTests": 0,
+      "dynamicWrites": 0,
+      "entryPoints": [
+        "src/index.ts"
+      ],
+      "externals": 0,
+      "files": [
+        {
+          "hash": "196a7d0e8550c406c49f403315f8e4aef25e14780e8e0d36c6898b046b9fe4a2",
+          "importsFiles": [
+            "src/ingest/ingest.ts",
+            "src/retrieve/build-query.ts",
+            "src/retrieve/bundle.ts",
+            "src/retrieve/lexical-search.ts",
+            "src/retrieve/merge-candidates.ts",
+            "src/retrieve/metadata-filter.ts",
+            "src/retrieve/rerank.ts",
+            "src/retrieve/retrieve.ts",
+            "src/retrieve/semantic-search.ts",
+            "src/storage/corpus-store.ts",
+            "src/types.ts",
+            "src/validate.ts"
+          ],
+          "path": "src/index.ts"
+        },
+        {
+          "exports": [
+            "ingestCorpusData",
+            "ingestFixtureCorpus"
+          ],
+          "hash": "e88238eec82065839184df44fa84e9ded0379556d6320994fa42b4cb4526228c",
+          "importsFiles": [
+            "src/storage/corpus-store.ts",
+            "src/types.ts"
+          ],
+          "path": "src/ingest/ingest.ts"
+        },
+        {
+          "exports": [
+            "buildQuery"
+          ],
+          "hash": "ec542c8fb3a64ffb7c562e19f88c37b2eb0b3a082e7222954cfd362e7f1fce66",
+          "importsFiles": [
+            "src/types.ts"
+          ],
+          "path": "src/retrieve/build-query.ts"
+        },
+        {
+          "exports": [
+            "assembleBundle"
+          ],
+          "hash": "225aae48c3b4d5064bef463212a8458e76c848f2310973162ab35b292cff23e7",
+          "importsFiles": [
+            "src/retrieve/build-query.ts",
+            "src/retrieve/rerank.ts",
+            "src/types.ts"
+          ],
+          "path": "src/retrieve/bundle.ts"
+        },
+        {
+          "exports": [
+            "lexicalSearch"
+          ],
+          "hash": "8f57140b044c446229b8eb1a107e51fd564210f828458030fbc751dd352aaf0e",
+          "importsFiles": [
+            "src/storage/corpus-store.ts"
+          ],
+          "path": "src/retrieve/lexical-search.ts"
+        },
+        {
+          "exports": [
+            "mergeCandidates"
+          ],
+          "hash": "cfffdc64fc09ef8982a3207170cf65828e0d7d175d7f017253a87eb7273aeb04",
+          "importsFiles": [
+            "src/retrieve/lexical-search.ts",
+            "src/retrieve/semantic-search.ts",
+            "src/storage/corpus-store.ts"
+          ],
+          "path": "src/retrieve/merge-candidates.ts"
+        },
+        {
+          "exports": [
+            "metadataFilter"
+          ],
+          "hash": "5549557e5f24df0ccda9f41bcc66e539c6be77f85b62db835d3efad66f358491",
+          "importsFiles": [
+            "src/retrieve/merge-candidates.ts",
+            "src/types.ts"
+          ],
+          "path": "src/retrieve/metadata-filter.ts"
+        },
+        {
+          "exports": [
+            "rerank"
+          ],
+          "hash": "f8b184ecfe71b5ffe90a9bc07859f5c942c11d626bdf51f16412eeb32e8207a8",
+          "importsFiles": [
+            "src/retrieve/metadata-filter.ts",
+            "src/types.ts"
+          ],
+          "path": "src/retrieve/rerank.ts"
+        },
+        {
+          "exports": [
+            "retrieve"
+          ],
+          "hash": "7a0241b5076504d7fa1417f5e9c8bd197d3c3b7d6b591219ac19db3838707426",
+          "importsFiles": [
+            "src/retrieve/build-query.ts",
+            "src/retrieve/bundle.ts",
+            "src/retrieve/lexical-search.ts",
+            "src/retrieve/merge-candidates.ts",
+            "src/retrieve/metadata-filter.ts",
+            "src/retrieve/rerank.ts",
+            "src/retrieve/semantic-search.ts",
+            "src/storage/corpus-store.ts",
+            "src/types.ts"
+          ],
+          "path": "src/retrieve/retrieve.ts"
+        },
+        {
+          "exports": [
+            "cosineSimilarity",
+            "embedCorpus",
+            "generateEmbedding",
+            "semanticSearch"
+          ],
+          "hash": "ad6a766b1f7546fe7306e5ef921b8d59ccd45f0ea65eae5a7cc43f9b9a836fe1",
+          "importsFiles": [
+            "src/storage/corpus-store.ts"
+          ],
+          "path": "src/retrieve/semantic-search.ts"
+        },
+        {
+          "hash": "5925b3b8dda0c47175174f6c1eea26162341f9889fff5c37f49e5dd2b461f08c",
+          "importsFiles": [
+            "src/types.ts"
+          ],
+          "path": "src/storage/corpus-store.ts"
+        },
+        {
+          "hash": "878e5b94f1897b7e710017e780411a3c2128fa67189419be51f096cbe457e32d",
+          "path": "src/types.ts"
+        },
+        {
+          "exports": [
+            "validateBundle",
+            "validateOverlay"
+          ],
+          "hash": "4251d6d1c6e2c6a1d2d9376d5ec49fcdd75dcf47d97e2ec054ff56fefa35939b",
+          "importsFiles": [
+            "src/types.ts"
+          ],
+          "path": "src/validate.ts"
+        }
+      ],
+      "globs": [
+        "src/**"
+      ],
+      "importConfidence": "full",
+      "name": "src",
+      "origin": "authored",
+      "role": "code",
+      "testedBy": 2,
+      "unresolvedSites": 0
+    },
+    {
+      "dynamicReads": 0,
+      "dynamicSpawns": 0,
+      "dynamicSpawnsInTests": 0,
+      "dynamicWrites": 0,
+      "entryPoints": [],
+      "externals": 0,
+      "files": [
+        {
+          "hash": "06c5248f5e1d36af4f7a3c6f15516e88f3391d68f2bdfa30fd14ed65a6ed972a",
+          "importsFiles": [
+            "src/types.ts",
+            "src/validate.ts"
+          ],
+          "path": "test/contracts.test.ts"
+        },
+        {
+          "hash": "9971fcae2e4667a30ed622101934d783fbf77cb285210dcf2628588cb65062ed",
+          "path": "test/fixtures/bundle-minimal.json"
+        },
+        {
+          "hash": "b92c704af215a7a9aab23ab38fd2654c13adb42b467779b36e0fc98d86d8d942",
+          "path": "test/fixtures/bundle-weak.json"
+        },
+        {
+          "hash": "755e342bdfbc9e7d8b940c7cf03603a0bf68fd271ebfeb8cd93ebb695f676c51",
+          "importsFiles": [
+            "src/ingest/ingest.ts",
+            "src/retrieve/retrieve.ts",
+            "src/storage/corpus-store.ts",
+            "src/types.ts",
+            "src/validate.ts"
+          ],
+          "path": "test/pipeline.test.ts"
+        }
+      ],
+      "globs": [
+        "test/**"
+      ],
+      "importConfidence": "full",
+      "name": "test",
+      "origin": "authored",
+      "role": "test",
+      "testedBy": 0,
+      "unresolvedSites": 0
+    }
+  ],
+  "doors": [
+    {
+      "checksCount": 1,
+      "commands": [
+        {
+          "job": "test",
+          "step": "2",
+          "text": "npm ci"
+        },
+        {
+          "job": "test",
+          "step": "3",
+          "text": "npm run check"
+        },
+        {
+          "job": "test",
+          "step": "4",
+          "text": "npm test"
+        }
+      ],
+      "elsewhere": [],
+      "file": ".github/workflows/ci.yml",
+      "landings": [],
+      "mentions": [],
+      "name": "CI",
+      "permissions": [],
+      "pushes": false,
+      "reach": [
+        {
+          "boundary": "src",
+          "depth": 0,
+          "files": 13
+        },
+        {
+          "boundary": "test",
+          "depth": 0,
+          "files": 2
+        }
+      ],
+      "readers": [],
+      "runs": [
+        {
+          "directory": true,
+          "job": "test",
+          "matched": true,
+          "path": "src/",
+          "runKind": "checks",
+          "via": "tsc tsconfig.json"
+        },
+        {
+          "directory": true,
+          "job": "test",
+          "matched": true,
+          "path": "test/",
+          "runKind": "executes",
+          "via": "vitest"
+        }
+      ],
+      "runsCount": 2,
+      "secrets": [],
+      "sends": {
+        "deploysPages": false,
+        "dispatchesTo": [],
+        "opensIssues": false,
+        "opensIssuesOnFailure": false,
+        "opensPullRequests": false,
+        "publishes": false,
+        "publishesTo": [],
+        "releases": false
+      },
+      "stages": [],
+      "triggers": [
+        {
+          "event": "pull_request",
+          "paths": [
+            ".github/workflows/**",
+            "package.json",
+            "site/astro.config.mjs",
+            "site/package-lock.json",
+            "site/package.json",
+            "src/**",
+            "test/**",
+            "tsconfig.json"
+          ]
+        },
+        {
+          "event": "push",
+          "paths": [
+            ".github/workflows/**",
+            "package.json",
+            "site/astro.config.mjs",
+            "site/package-lock.json",
+            "site/package.json",
+            "src/**",
+            "test/**",
+            "tsconfig.json"
+          ]
+        },
+        {
+          "event": "workflow_dispatch"
+        }
+      ],
+      "uses": [
+        "actions/checkout",
+        "actions/setup-node"
+      ],
+      "usesWorkflowToken": false
+    },
+    {
+      "checksCount": 0,
+      "commands": [
+        {
+          "job": "build",
+          "step": "Install site dependencies",
+          "text": "npm ci"
+        },
+        {
+          "job": "build",
+          "step": "Build site",
+          "text": "npm run build"
+        }
+      ],
+      "elsewhere": [],
+      "file": ".github/workflows/pages.yml",
+      "landings": [],
+      "mentions": [],
+      "name": "Deploy site to GitHub Pages",
+      "permissions": [
+        "contents:read",
+        "id-token:write",
+        "pages:write"
+      ],
+      "pushes": false,
+      "reach": [
+        {
+          "boundary": "site",
+          "depth": 0,
+          "files": 3
+        }
+      ],
+      "readers": [],
+      "runs": [
+        {
+          "job": "build",
+          "matched": true,
+          "path": "site/astro.config.mjs",
+          "runKind": "executes",
+          "via": "astro build"
+        },
+        {
+          "directory": true,
+          "job": "build",
+          "matched": true,
+          "path": "site/src/",
+          "runKind": "executes",
+          "via": "astro build"
+        }
+      ],
+      "runsCount": 2,
+      "secrets": [],
+      "sends": {
+        "deploysPages": true,
+        "dispatchesTo": [],
+        "opensIssues": false,
+        "opensIssuesOnFailure": false,
+        "opensPullRequests": false,
+        "publishes": false,
+        "publishesTo": [],
+        "releases": false
+      },
+      "stages": [],
+      "triggers": [
+        {
+          "branches": [
+            "main"
+          ],
+          "event": "push",
+          "paths": [
+            ".github/workflows/pages.yml",
+            "site/**"
+          ]
+        },
+        {
+          "event": "workflow_dispatch"
+        }
+      ],
+      "uses": [
+        "actions/checkout",
+        "actions/deploy-pages",
+        "actions/setup-node",
+        "actions/upload-pages-artifact"
+      ],
+      "usesWorkflowToken": false
+    },
+    {
+      "checksCount": 0,
+      "commands": [],
+      "elsewhere": [],
+      "file": "package.json",
+      "kind": "package",
+      "landings": [],
+      "mentions": [],
+      "name": "@roleos/knowledge-core",
+      "permissions": [],
+      "pushes": false,
+      "reach": [
+        {
+          "boundary": "src",
+          "depth": 0,
+          "files": 13
+        }
+      ],
+      "readers": [],
+      "runs": [
+        {
+          "path": "src/index.ts",
+          "runKind": "executes"
+        }
+      ],
+      "runsCount": 1,
+      "secrets": [],
+      "sends": {
+        "deploysPages": false,
+        "dispatchesTo": [],
+        "opensIssues": false,
+        "opensIssuesOnFailure": false,
+        "opensPullRequests": false,
+        "publishes": false,
+        "publishesTo": [],
+        "releases": false
+      },
+      "stages": [],
+      "triggers": [],
+      "uses": [],
+      "usesWorkflowToken": false
+    }
+  ],
+  "edges": [
+    {
+      "from": "test",
+      "fromTests": true,
+      "kind": "file",
+      "to": "src"
+    }
+  ],
+  "generatedFrom": {
+    "commit": "274af45bea266e09627da8aeab4d1c35f15ea103",
+    "tracked": 56
+  },
+  "landings": [
+    {
+      "readers": [
+        {
+          "by": "site/astro.config.mjs",
+          "call": "content-collection",
+          "confidence": "ast"
+        }
+      ],
+      "target": "site/src/content/docs",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "site/astro.config.mjs",
+          "call": "autogenerate",
+          "confidence": "ast"
+        }
+      ],
+      "target": "site/src/content/docs/handbook",
+      "writers": []
+    }
+  ],
+  "overlaps": [],
+  "submodules": [],
+  "symlinks": [],
+  "testFiles": 4,
+  "unassigned": []
+}
