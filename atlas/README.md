@@ -1,24 +1,31 @@
 # knowledge-core: how it works
 
-Mapped at 2026-09-23 from commit 274af45.
+Mapped at 2026-09-30 from commit a03320f by Atlas 1.24.0.
 
 ## What this is
 
-6 parts, mostly TypeScript (17 files). Work enters through 3 doors; the busiest is CI, which reaches 2 parts. People import @roleos/knowledge-core.
+6 parts, mostly TypeScript (17 files), CSS (2), Astro (1) and JavaScript (1). Work enters through 3 doors; the busiest is CI, which reaches 2 parts. It deploys a site to GitHub Pages.
 
-## What changed since the last map
+## What changed since 2026-09-23 (274af45)
 
-This is the first map.
+- CI's pull request trigger now also names `atlas/**` and `codecov.yml`.
+- CI's push trigger now also names `atlas/**` and `codecov.yml`.
+- knowledge/corpus/fixtures/corpus-divergence.json is now read by test/pipeline.test.ts.
+- knowledge/roles/ is now read by test/contracts.test.ts and test/pipeline.test.ts.
+- knowledge/roles/competitive-analyst.json is now read by test/pipeline.test.ts.
+- And 6 more new writers and readers of places.
+- 1 file added and 56 changed content, across 6 parts.
 
 ## What comes in
 
-1. **CI.** On a pull request touching 8 paths; on a push touching 8 paths; or by hand. Runs test/; checks src/.
+1. **CI.** On a pull request touching 10 paths; on a push touching 10 paths; or by hand. Runs test/; checks src/.
 2. **Deploy site to GitHub Pages.** On a push to main touching 2 paths; or by hand. Runs site/astro.config.mjs and site/src/.
-3. **@roleos/knowledge-core** (the package people import). Loads src/index.ts.
+3. **@roleos/knowledge-core** (the package's entry, not published from here). Loads src/index.ts.
 
 ## What happens through CI
 
 1. The workflow runs test/ in test; it checks src/ in src.
+2. It uploads coverage to Codecov.
 
 ## Who reads the results
 
@@ -28,7 +35,7 @@ CI writes nothing this map can see.
 
 **Deploy site to GitHub Pages** runs site/astro.config.mjs and site/src/, and deploys the site.
 
-**@roleos/knowledge-core** (the package people import) loads src/index.ts.
+**@roleos/knowledge-core** (the package's entry, not published from here) loads src/index.ts.
 
 ## What breaks what
 
@@ -62,13 +69,13 @@ People write .github/, knowledge/, the repository root and site/. Nothing in thi
 
 ## Where to start
 
-.github/workflows/ci.yml → test/contracts.test.ts
+src/index.ts → src/validate.ts → src/types.ts
 
-Read those in order to follow one pull request end to end.
+Read those in order to follow one import of @roleos/knowledge-core end to end. This path follows @roleos/knowledge-core (the package's entry, not published from here) from its entry, since CI runs only tests and checks.
 
 ## What this map cannot see
 
-- 0 writes and 1 read use paths built at run time and are not named here.
-- Statistics confidence is low: fewer than 30 qualifying commits in the window, and fewer than 20 source files reach 10 revisions.
+- 6 reads go to a path their caller passes, not to this repository.
+- Statistics confidence is low: fewer than 30 qualifying commits in the window, and fewer than 25 source files reach 10 revisions.
 
 Regenerate with `npx --yes @dogfood-lab/atlas map`.

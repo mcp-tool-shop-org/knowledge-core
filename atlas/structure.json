@@ -9,11 +9,11 @@
       "externals": 0,
       "files": [
         {
-          "hash": "e745631f46a036ea69702a3e05ac5c031c1d0655b7fe5c2566a29f0196b748b2",
+          "hash": "7e041919a430d5c1e941fbb4531c67ae1e3b7346210a49e5092ab3a14204abc7",
           "path": ".github/workflows/ci.yml"
         },
         {
-          "hash": "4eb81eeb113bdba84a09846e4b80ab63d20507cb41935566c110e37f99afe899",
+          "hash": "93dc62c74dfddae3a1dc3291b236a3e266cc0f9963100f2967357b3f3833b310",
           "path": ".github/workflows/pages.yml"
         }
       ],
@@ -36,27 +36,27 @@
       "externals": 0,
       "files": [
         {
-          "hash": "31e6bd37bfdaf3784f6da67dcc51f8c78cc458bb06ee61f0f2df4dc74f526dbe",
+          "hash": "f583ab22f00a28c4bdcaa6df8656ac414b9339d8ae79b994f8abe1fd3d878a02",
           "path": "knowledge/corpus/fixtures/corpus-divergence.json"
         },
         {
-          "hash": "e7ae48b9f934f6957bb794638b3a9ce0c4820b8e9cf3bde37a61b5db1f33342b",
+          "hash": "019fbd4369f0fc4caf6e9608641aa1353aba4fac6e4168d8fb9940fd63062b06",
           "path": "knowledge/roles/competitive-analyst.json"
         },
         {
-          "hash": "e8a62df96856fc10ea3fa0dee37e4c49fb262e1a83614651c7e0ee0b4d79ce27",
+          "hash": "ec44a7a08aec18b77b5e291d2d1799d1ff2b8947a42034fad743fcd090dfafcf",
           "path": "knowledge/roles/critic-reviewer.json"
         },
         {
-          "hash": "1ead85173b2d305de831ca4f3ba7b6c90eb3ee10a42f539314a1348cd6690542",
+          "hash": "89f989595547d8bce014f7c4901964a26e926f68b2f0ed1ea2d7a72c5b9ef4ab",
           "path": "knowledge/roles/docs-architect.json"
         },
         {
-          "hash": "2d87df0db9a53c616480161e92f2c8fec31119db43bf2ae38f8b5a430a360202",
+          "hash": "caaf5f80fbd53b884c13dffab8b687b806dc42f7de06f327faf031322241a911",
           "path": "knowledge/roles/product-strategist.json"
         },
         {
-          "hash": "e3b0d7ef7048ef594e5643b067df6e8b1c4d7d0e4ec6c6d435b4314f512eeaf7",
+          "hash": "d71b1241edf1b8d81ff2912de838c5c8e5c0d7d39b43c14a3544124175091862",
           "path": "knowledge/roles/security-reviewer.json"
         }
       ],
@@ -79,71 +79,75 @@
       "externals": 0,
       "files": [
         {
-          "hash": "d485565c8e7455bb205ad30ea12f10eb5c41e1ee153cbbb3ef5a720f4d2e9a52",
+          "hash": "4c5bbae96ec4ff5780068402e6b9f4b9ae47bb706ca009ccf19dd4a698d2edb8",
           "path": ".gitignore"
         },
         {
-          "hash": "c6630ac241132de5a5ba9024db91ac15ec08b79afc7bd90a97579bf0903a9f41",
+          "hash": "f60d0aa78cf2f168ece9e89f0139583463629cdfcc4cc5c1c72e00efaa5e2ba0",
           "path": "CHANGELOG.md"
         },
         {
-          "hash": "5ae6b3c8f446f0a7cb95176e4dadb91b68aaffb16b3be09f64f5de248b6a973a",
+          "hash": "367e5141e4f5884e5791c4021f33a9faa958840a5decf44e1b273a87aad1c459",
           "path": "LICENSE"
         },
         {
-          "hash": "8b73a2f7b2da40122b16695ccb75356b46ef3ffb8be7771b3dfcabb694d73921",
+          "hash": "dcd754643f439424c8f2aee0e8debbad49606a1dbeec7fdd31128b3cf0343353",
           "path": "README.es.md"
         },
         {
-          "hash": "25e1c2350a3e42d21b29ed2552a2c0ea8b75301e3a1588306487614e004d5397",
+          "hash": "5a2a59ae8a3aa6a6f5be3893f6e68553a1ab42a827ffa6160249759a1913fff2",
           "path": "README.fr.md"
         },
         {
-          "hash": "b8999461c04c81702041fe53533f2e8cd8ecc18da361896584dc61862c8121a4",
+          "hash": "1aadc5a4ebf1113487b4e1bd0487cbd358af611e2947fa1af1c1dd7d7d4656f0",
           "path": "README.hi.md"
         },
         {
-          "hash": "e618556235eeb48e753c5e3e53c8250928756391db0f69fdf482f5d841caac0b",
+          "hash": "c2716735cf9846845b2f48f5cdc112aecad64996fccf70ec84a9f6753659bb1b",
           "path": "README.it.md"
         },
         {
-          "hash": "91c80d6018d186387c115cba76c8fc2324248c389e3301efbb2cd81112334af5",
+          "hash": "dfed925373b11b6c2dc8510d2f55d2cbdceb18d908cb5a3cb6497efc684df06e",
           "path": "README.ja.md"
         },
         {
-          "hash": "a4d1d01f924c4631e87a5cdb9dee466f583ee2d788857799e7477d249ba99863",
+          "hash": "ac8e9a2dbf6a693cc5d51d85ba81e29075bf0d4e52734585b22465f8db4a0d9a",
           "path": "README.md"
         },
         {
-          "hash": "94d0f9eda2e827baa939a3312c59db6458fdab701f760b6bd3ea36b1e59d8840",
+          "hash": "0672b757f1b493118953d0e6a2e8b140f86ff7111904c60281ee797dfb32f9a8",
           "path": "README.pt-BR.md"
         },
         {
-          "hash": "619f7866849e7a7ba549097c29780a42e8f17f99e8ecb570a3e0c261f80ad6f5",
+          "hash": "b3ec44ed7e8fab7a1fbbf99098afcc7a10f0c705771689a4a44c9847eb38c638",
           "path": "README.zh.md"
         },
         {
-          "hash": "3c97799787538a61aed96675d7e9a21bf189a77e9bd7afa414113c5aa7840dfc",
+          "hash": "b00fe74cf255d8d6944fb5374a73f2502e777569e36e2d5f52656be9af010c32",
           "path": "SCORECARD.md"
         },
         {
-          "hash": "b1fd42a5e88a6b14552bf4351e23f396e689c127d763e821d670af99fd2929b6",
+          "hash": "2833fd665aa6a1bbfdc8deffc2e52ab61b20430f81daf53ddf4611a65fb61de9",
           "path": "SECURITY.md"
         },
         {
-          "hash": "2387d3ae60e85e6d4901b6cb0a1957adb02eabce8e37897b14da50f5c91d4e89",
+          "hash": "aa66d0b4e5a53bd9d0582711c73d2865e4e6a28aa62b52485a8c30621bf926da",
           "path": "SHIP_GATE.md"
         },
         {
-          "hash": "cac25c0d01c8995d20d70cc52ab8225868ed56d37c1f620679c2b2e203309675",
+          "hash": "59ca3f6a5be96b80fee73bebf2b778211208d17cd3fb82e2134608dff0729c76",
+          "path": "codecov.yml"
+        },
+        {
+          "hash": "b4074d8a08a32800c7b48ae5d2e57e750017af258b86db8b2a27753b663242f5",
           "path": "package-lock.json"
         },
         {
-          "hash": "e63d4a1dc5588c5f37ab291c772b58b9a2b51c9c091a8eaee87c91e12aa8a9eb",
+          "hash": "795d506f0e03407d02400163be8e5b465a1f0e0a4d6df57e31f4104439a29b08",
           "path": "package.json"
         },
         {
-          "hash": "7ae065f3f1e8dea5b89d567e08632349ad4fae5f80d7412bef5777cf7a8b5dfa",
+          "hash": "51464047a162a414c7c1a1db464a04e34974f8d2d838590064f5956f0ee71969",
           "path": "tsconfig.json"
         }
       ],
@@ -154,7 +158,8 @@
       "name": "root",
       "origin": "authored",
       "role": "config",
-      "testedBy": 0,
+      "testedBy": 1,
+      "testedByScript": true,
       "unresolvedSites": 0
     },
     {
@@ -166,59 +171,69 @@
       "externals": 0,
       "files": [
         {
-          "hash": "ce3023d1ef02353949b3d15f8c97b2df05b658e432c821c55700deaf58eb04c5",
+          "hash": "af8dc6591908b525951e202119d1abba4987ba3ab04ccce8567da81b1b7041d8",
           "path": "site/astro.config.mjs"
         },
         {
-          "hash": "b5578baf42cab82e5e7b451b6992cb929aeb6ff8d02d8e11ab690e6f67fea144",
+          "hash": "af5d4f54dca60686724d306eb58759fb25b6f5ba4d66559ab84a968112a184e5",
           "path": "site/package-lock.json"
         },
         {
-          "hash": "0fe0343f8ddb0628d954129b02a72b3b2c8f8f884b1380c5567403c4f55942f8",
+          "hash": "ede5fe47605b55555e8d3ed7b2eb904e0c9b03a975348882ae0a870ef5b98bb7",
           "path": "site/package.json"
         },
         {
-          "hash": "ec030f2e4bf6dc57eaca075d390c228b3212cf29db267e32ef92e110de1acdcc",
+          "constantOnly": true,
+          "hash": "ee756dfba4122d2acc94a39b2555d9f200fff56a87a8c0b10f9cd01df26a8b62",
           "path": "site/src/content.config.ts"
         },
         {
-          "hash": "c2f3e58588be8259ba73fa6013dfac0f85f96fdd07bddf1bcc21b6c67a060a7c",
+          "hash": "14e1a6449ef6769bcff6ccd3da9b571aded6101056d5cb46d293d280d27ce0a3",
           "path": "site/src/content/docs/handbook/architecture.md"
         },
         {
-          "hash": "742bdf1934d29a355aa49b81b6a40c56ae12c55a946d1369504a50997d092f8c",
+          "hash": "c84c14fd900fbbf5504590c96456a19c7949f720aa88d1da30bad6985b1b8a83",
           "path": "site/src/content/docs/handbook/getting-started.md"
         },
         {
-          "hash": "5eb08a3f723b3813ee1f7521e9d9a38130547c504fe80c0f4d63e7437dd463fc",
+          "hash": "9e9042771e315f6ea63ecfc2af10d399b1a3b41a474eedbedb9d08b66d8198b9",
           "path": "site/src/content/docs/handbook/index.md"
         },
         {
-          "hash": "a961f94a5774f1a7fd94504ec6c712868363b8f551611ea5bf33364503aa5a64",
+          "hash": "36fb256cd7991b2c218c988ac0134d9228baf4abb83932a373221595154f67cc",
           "path": "site/src/content/docs/handbook/overlays.md"
         },
         {
-          "hash": "e4056590c2342f88665388a1b850fc50057b4bbd1b92aebb7ef5dbf6d8b682dc",
+          "hash": "5c85ac084683ff5b3129a869bc98fdf16a2b10f01c47c83044b9e1f376cc7ff5",
           "path": "site/src/content/docs/handbook/reference.md"
         },
         {
-          "hash": "a699ad78a6d27d6864ccfe4c3a4a01993aca28ecb4a3d20893f37db9f9b1a522",
+          "hash": "391533713539035d3c92282579d43de0f137067867fdb502d7eaea3c74601d2a",
+          "importOrder": [
+            "site/src/styles/global.css",
+            "site/src/site-config.ts"
+          ],
+          "importsFiles": [
+            "site/src/site-config.ts",
+            "site/src/styles/global.css"
+          ],
           "path": "site/src/pages/index.astro"
         },
         {
-          "hash": "76c5da2cbb2ba161573c5b54a3b489d5b721f1358334325205e0422bb133e1e9",
+          "constantOnly": true,
+          "hash": "b240ba84ab16e72d5307af6d3e563e606201d40e2e351f9c3b49bf0d66986323",
           "path": "site/src/site-config.ts"
         },
         {
-          "hash": "5995279a40a9a63426a93feec129006b261cc7200426a398914d0317722ef19b",
+          "hash": "29ee8df91833e694bdba973126b34a6177de4cf01dab6d9ef7d3126e8e2b67fb",
           "path": "site/src/styles/global.css"
         },
         {
-          "hash": "9699457f0a7a31093d48944cabb11812852f0ce480732986b04896d53d29c4ca",
+          "hash": "b17173f07c0db8b532533b5de48035355a12d9582f0918d75b12214b07d53a17",
           "path": "site/src/styles/starlight-custom.css"
         },
         {
-          "hash": "61fc24492db9aef7ec38eb91cfeebaef96155014bb5f22648fd8ed2327c6cae2",
+          "hash": "b5b0a5b04a14cddd7713c5e1c82e86c79c17c2f86b170e26e9b170b3d5e01cd9",
           "path": "site/tsconfig.json"
         }
       ],
@@ -233,7 +248,7 @@
       "unresolvedSites": 0
     },
     {
-      "dynamicReads": 1,
+      "dynamicReads": 0,
       "dynamicSpawns": 0,
       "dynamicSpawnsInTests": 0,
       "dynamicWrites": 0,
@@ -243,7 +258,21 @@
       "externals": 0,
       "files": [
         {
-          "hash": "196a7d0e8550c406c49f403315f8e4aef25e14780e8e0d36c6898b046b9fe4a2",
+          "hash": "7b67bf8151d3b9db3abbbff5571f3123af63e8a9ba32ce0426506f7467b3aea7",
+          "importOrder": [
+            "src/types.ts",
+            "src/validate.ts",
+            "src/storage/corpus-store.ts",
+            "src/ingest/ingest.ts",
+            "src/retrieve/retrieve.ts",
+            "src/retrieve/build-query.ts",
+            "src/retrieve/lexical-search.ts",
+            "src/retrieve/semantic-search.ts",
+            "src/retrieve/merge-candidates.ts",
+            "src/retrieve/metadata-filter.ts",
+            "src/retrieve/rerank.ts",
+            "src/retrieve/bundle.ts"
+          ],
           "importsFiles": [
             "src/ingest/ingest.ts",
             "src/retrieve/build-query.ts",
@@ -258,14 +287,27 @@
             "src/types.ts",
             "src/validate.ts"
           ],
-          "path": "src/index.ts"
+          "path": "src/index.ts",
+          "reexportsOnly": true
         },
         {
           "exports": [
             "ingestCorpusData",
             "ingestFixtureCorpus"
           ],
-          "hash": "e88238eec82065839184df44fa84e9ded0379556d6320994fa42b4cb4526228c",
+          "failurePaths": [
+            {
+              "in": "ingestCorpusData",
+              "kind": "catch",
+              "line": 90
+            },
+            {
+              "in": "ingestCorpusData",
+              "kind": "catch",
+              "line": 94
+            }
+          ],
+          "hash": "917662862c2511b782486ec26e8f09749b04a30622ebd20f367ef860c3ee9d97",
           "importsFiles": [
             "src/storage/corpus-store.ts",
             "src/types.ts"
@@ -276,7 +318,7 @@
           "exports": [
             "buildQuery"
           ],
-          "hash": "ec542c8fb3a64ffb7c562e19f88c37b2eb0b3a082e7222954cfd362e7f1fce66",
+          "hash": "1c69712aa36f0ac798206555beda0941ce1c3db505b93e11c2bfc7c1de183a5a",
           "importsFiles": [
             "src/types.ts"
           ],
@@ -286,7 +328,12 @@
           "exports": [
             "assembleBundle"
           ],
-          "hash": "225aae48c3b4d5064bef463212a8458e76c848f2310973162ab35b292cff23e7",
+          "hash": "7a972f185d66f9e4b204edc7f959d9025fdd4770613200c004f832f20cd86716",
+          "importOrder": [
+            "src/types.ts",
+            "src/retrieve/rerank.ts",
+            "src/retrieve/build-query.ts"
+          ],
           "importsFiles": [
             "src/retrieve/build-query.ts",
             "src/retrieve/rerank.ts",
@@ -298,7 +345,7 @@
           "exports": [
             "lexicalSearch"
           ],
-          "hash": "8f57140b044c446229b8eb1a107e51fd564210f828458030fbc751dd352aaf0e",
+          "hash": "cca9cb46b189475a80b4f88e7f8bf1c4c8e76000393a4710452e8ba8e18da533",
           "importsFiles": [
             "src/storage/corpus-store.ts"
           ],
@@ -308,7 +355,12 @@
           "exports": [
             "mergeCandidates"
           ],
-          "hash": "cfffdc64fc09ef8982a3207170cf65828e0d7d175d7f017253a87eb7273aeb04",
+          "hash": "4290c94172103278b6b59d22d9560f58d3e60ca0ff95816d63c4953927e002ed",
+          "importOrder": [
+            "src/storage/corpus-store.ts",
+            "src/retrieve/lexical-search.ts",
+            "src/retrieve/semantic-search.ts"
+          ],
           "importsFiles": [
             "src/retrieve/lexical-search.ts",
             "src/retrieve/semantic-search.ts",
@@ -320,7 +372,11 @@
           "exports": [
             "metadataFilter"
           ],
-          "hash": "5549557e5f24df0ccda9f41bcc66e539c6be77f85b62db835d3efad66f358491",
+          "hash": "3c9e1e04939f6507529c6730d20cbd8d822bb4d6939f6cec3e4437f3683a3e79",
+          "importOrder": [
+            "src/types.ts",
+            "src/retrieve/merge-candidates.ts"
+          ],
           "importsFiles": [
             "src/retrieve/merge-candidates.ts",
             "src/types.ts"
@@ -331,7 +387,11 @@
           "exports": [
             "rerank"
           ],
-          "hash": "f8b184ecfe71b5ffe90a9bc07859f5c942c11d626bdf51f16412eeb32e8207a8",
+          "hash": "46848c2cbb82bc4b0856d8c31544d734a9c0d2199958093165811684400f5273",
+          "importOrder": [
+            "src/types.ts",
+            "src/retrieve/metadata-filter.ts"
+          ],
           "importsFiles": [
             "src/retrieve/metadata-filter.ts",
             "src/types.ts"
@@ -342,7 +402,18 @@
           "exports": [
             "retrieve"
           ],
-          "hash": "7a0241b5076504d7fa1417f5e9c8bd197d3c3b7d6b591219ac19db3838707426",
+          "hash": "319b6c4bf750394b897481e63446ea46a91ef7429eeaa49f5f37d2fd6abf55d9",
+          "importOrder": [
+            "src/types.ts",
+            "src/storage/corpus-store.ts",
+            "src/retrieve/build-query.ts",
+            "src/retrieve/lexical-search.ts",
+            "src/retrieve/semantic-search.ts",
+            "src/retrieve/merge-candidates.ts",
+            "src/retrieve/metadata-filter.ts",
+            "src/retrieve/rerank.ts",
+            "src/retrieve/bundle.ts"
+          ],
           "importsFiles": [
             "src/retrieve/build-query.ts",
             "src/retrieve/bundle.ts",
@@ -363,21 +434,28 @@
             "generateEmbedding",
             "semanticSearch"
           ],
-          "hash": "ad6a766b1f7546fe7306e5ef921b8d59ccd45f0ea65eae5a7cc43f9b9a836fe1",
+          "failurePaths": [
+            {
+              "in": "generateEmbedding",
+              "kind": "catch",
+              "line": 39
+            }
+          ],
+          "hash": "8c82ff7bf6526ab981ce2232f753511be6552de34244e3790a52fa9bb116dbea",
           "importsFiles": [
             "src/storage/corpus-store.ts"
           ],
           "path": "src/retrieve/semantic-search.ts"
         },
         {
-          "hash": "5925b3b8dda0c47175174f6c1eea26162341f9889fff5c37f49e5dd2b461f08c",
+          "hash": "f0bc3789a5597a3547737dd42d695e81c6d218f8a6a93d9bed05d762029a5238",
           "importsFiles": [
             "src/types.ts"
           ],
           "path": "src/storage/corpus-store.ts"
         },
         {
-          "hash": "878e5b94f1897b7e710017e780411a3c2128fa67189419be51f096cbe457e32d",
+          "hash": "55d5cf5b44427df35ba081027537bea8e2602ebc5769b77d471ff0ced66c93ee",
           "path": "src/types.ts"
         },
         {
@@ -385,7 +463,7 @@
             "validateBundle",
             "validateOverlay"
           ],
-          "hash": "4251d6d1c6e2c6a1d2d9376d5ec49fcdd75dcf47d97e2ec054ff56fefa35939b",
+          "hash": "91d715d9f8b8e12b81f1173773bd2005df938b3ca278a2591db6cc96776652de",
           "importsFiles": [
             "src/types.ts"
           ],
@@ -398,7 +476,20 @@
       "importConfidence": "full",
       "name": "src",
       "origin": "authored",
+      "outsidePlaces": [
+        {
+          "reads": 6,
+          "where": [
+            "caller"
+          ],
+          "writes": 0
+        }
+      ],
+      "outsideReads": 6,
       "role": "code",
+      "testRunners": [
+        "vitest"
+      ],
       "testedBy": 2,
       "unresolvedSites": 0
     },
@@ -411,23 +502,35 @@
       "externals": 0,
       "files": [
         {
-          "hash": "06c5248f5e1d36af4f7a3c6f15516e88f3391d68f2bdfa30fd14ed65a6ed972a",
+          "hash": "d69c07112da2c8ede193dea22f64b80da162e54eb5437b10cc5afa694dd6afe9",
+          "importOrder": [
+            "src/validate.ts",
+            "src/types.ts"
+          ],
           "importsFiles": [
             "src/types.ts",
             "src/validate.ts"
           ],
-          "path": "test/contracts.test.ts"
+          "path": "test/contracts.test.ts",
+          "testFramework": "vitest"
         },
         {
-          "hash": "9971fcae2e4667a30ed622101934d783fbf77cb285210dcf2628588cb65062ed",
+          "hash": "c222fe27443781664c7570ca9ae0dbee55a1399c163c6a298cc17125b555076e",
           "path": "test/fixtures/bundle-minimal.json"
         },
         {
-          "hash": "b92c704af215a7a9aab23ab38fd2654c13adb42b467779b36e0fc98d86d8d942",
+          "hash": "bf96f086948affd17343f40944f5ad6c064b521ad5350d9fce2ca1bf07959395",
           "path": "test/fixtures/bundle-weak.json"
         },
         {
-          "hash": "755e342bdfbc9e7d8b940c7cf03603a0bf68fd271ebfeb8cd93ebb695f676c51",
+          "hash": "d0eea456e4e68cac15116f7211363bf2b1466b948a9315095d5b261964ffa1ed",
+          "importOrder": [
+            "src/storage/corpus-store.ts",
+            "src/ingest/ingest.ts",
+            "src/retrieve/retrieve.ts",
+            "src/validate.ts",
+            "src/types.ts"
+          ],
           "importsFiles": [
             "src/ingest/ingest.ts",
             "src/retrieve/retrieve.ts",
@@ -435,7 +538,8 @@
             "src/types.ts",
             "src/validate.ts"
           ],
-          "path": "test/pipeline.test.ts"
+          "path": "test/pipeline.test.ts",
+          "testFramework": "vitest"
         }
       ],
       "globs": [
@@ -445,6 +549,9 @@
       "name": "test",
       "origin": "authored",
       "role": "test",
+      "testRunners": [
+        "vitest"
+      ],
       "testedBy": 0,
       "unresolvedSites": 0
     }
@@ -454,27 +561,98 @@
       "checksCount": 1,
       "commands": [
         {
+          "dir": "",
           "job": "test",
-          "step": "2",
-          "text": "npm ci"
+          "programs": [
+            "npx"
+          ],
+          "step": "Atlas check"
         },
         {
+          "dir": "",
           "job": "test",
-          "step": "3",
-          "text": "npm run check"
+          "programs": [
+            "npm"
+          ],
+          "step": "3"
         },
         {
+          "dir": "",
           "job": "test",
-          "step": "4",
-          "text": "npm test"
+          "programs": [
+            "npm"
+          ],
+          "step": "4"
+        },
+        {
+          "dir": "",
+          "job": "test",
+          "programs": [
+            "npm"
+          ],
+          "step": "5"
         }
       ],
       "elsewhere": [],
       "file": ".github/workflows/ci.yml",
+      "jobs": [
+        {
+          "basis": "declared",
+          "name": "test",
+          "runsOn": [
+            {
+              "labels": [
+                "ubuntu-latest"
+              ],
+              "platform": {
+                "cpu": "x64",
+                "libc": "glibc",
+                "os": "linux"
+              }
+            }
+          ],
+          "setup": [
+            {
+              "ranges": [
+                {
+                  "from": "18",
+                  "range": ">=18.0.0 <19.0.0-0"
+                },
+                {
+                  "from": "22",
+                  "range": ">=22.0.0 <23.0.0-0"
+                }
+              ],
+              "step": "1",
+              "uses": "actions/setup-node",
+              "version": "${{ matrix.node-version }}"
+            }
+          ]
+        },
+        {
+          "basis": "declared",
+          "name": "codecov",
+          "runsOn": [
+            {
+              "labels": [
+                "ubuntu-latest"
+              ],
+              "platform": {
+                "cpu": "x64",
+                "libc": "glibc",
+                "os": "linux"
+              }
+            }
+          ]
+        }
+      ],
       "landings": [],
       "mentions": [],
       "name": "CI",
-      "permissions": [],
+      "permissions": [
+        "contents:read",
+        "id-token:write"
+      ],
       "pushes": false,
       "reach": [
         {
@@ -520,11 +698,26 @@
         "releases": false
       },
       "stages": [],
+      "tests": [
+        {
+          "coverage": true,
+          "files": 2,
+          "job": "test",
+          "junit": true,
+          "runner": "vitest",
+          "step": "5",
+          "through": [
+            "npm test"
+          ]
+        }
+      ],
       "triggers": [
         {
           "event": "pull_request",
           "paths": [
             ".github/workflows/**",
+            "atlas/**",
+            "codecov.yml",
             "package.json",
             "site/astro.config.mjs",
             "site/package-lock.json",
@@ -538,6 +731,8 @@
           "event": "push",
           "paths": [
             ".github/workflows/**",
+            "atlas/**",
+            "codecov.yml",
             "package.json",
             "site/astro.config.mjs",
             "site/package-lock.json",
@@ -553,7 +748,10 @@
       ],
       "uses": [
         "actions/checkout",
-        "actions/setup-node"
+        "actions/download-artifact",
+        "actions/setup-node",
+        "actions/upload-artifact",
+        "codecov/codecov-action"
       ],
       "usesWorkflowToken": false
     },
@@ -561,18 +759,74 @@
       "checksCount": 0,
       "commands": [
         {
+          "dir": "site",
           "job": "build",
-          "step": "Install site dependencies",
-          "text": "npm ci"
+          "programs": [
+            "npm"
+          ],
+          "step": "Install site dependencies"
         },
         {
+          "dir": "site",
           "job": "build",
-          "step": "Build site",
-          "text": "npm run build"
+          "programs": [
+            "npm"
+          ],
+          "step": "Build site"
         }
       ],
       "elsewhere": [],
       "file": ".github/workflows/pages.yml",
+      "jobs": [
+        {
+          "basis": "declared",
+          "name": "build",
+          "runsOn": [
+            {
+              "labels": [
+                "ubuntu-latest"
+              ],
+              "platform": {
+                "cpu": "x64",
+                "libc": "glibc",
+                "os": "linux"
+              }
+            }
+          ],
+          "setup": [
+            {
+              "ranges": [
+                {
+                  "from": "22",
+                  "range": ">=22.0.0 <23.0.0-0"
+                }
+              ],
+              "step": "1",
+              "uses": "actions/setup-node",
+              "version": "22"
+            }
+          ]
+        },
+        {
+          "basis": "declared",
+          "environment": {
+            "name": "github-pages"
+          },
+          "name": "deploy",
+          "runsOn": [
+            {
+              "labels": [
+                "ubuntu-latest"
+              ],
+              "platform": {
+                "cpu": "x64",
+                "libc": "glibc",
+                "os": "linux"
+              }
+            }
+          ]
+        }
+      ],
       "landings": [],
       "mentions": [],
       "name": "Deploy site to GitHub Pages",
@@ -586,7 +840,7 @@
         {
           "boundary": "site",
           "depth": 0,
-          "files": 3
+          "files": 5
         }
       ],
       "readers": [],
@@ -647,6 +901,7 @@
       "checksCount": 0,
       "commands": [],
       "elsewhere": [],
+      "entry": "src/index.ts",
       "file": "package.json",
       "kind": "package",
       "landings": [],
@@ -682,6 +937,7 @@
       },
       "stages": [],
       "triggers": [],
+      "unpublished": true,
       "uses": [],
       "usesWorkflowToken": false
     }
@@ -694,11 +950,138 @@
       "to": "src"
     }
   ],
+  "engine": "1.24.0",
   "generatedFrom": {
-    "commit": "274af45bea266e09627da8aeab4d1c35f15ea103",
-    "tracked": 56
+    "commit": "a03320f4ddf50042b1393acba618c8d22c7774bf",
+    "tracked": 57
   },
   "landings": [
+    {
+      "readers": [
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        },
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "readFileSync",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "knowledge/corpus/fixtures/corpus-divergence.json",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "test/contracts.test.ts",
+          "call": "readdirSync",
+          "confidence": "ast",
+          "fromTests": true
+        },
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "knowledge/roles",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        },
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "readFileSync",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "knowledge/roles/competitive-analyst.json",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        },
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "readFileSync",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "knowledge/roles/critic-reviewer.json",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        },
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "readFileSync",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "knowledge/roles/docs-architect.json",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        },
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "readFileSync",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "knowledge/roles/product-strategist.json",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        },
+        {
+          "by": "test/pipeline.test.ts",
+          "call": "readFileSync",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "knowledge/roles/security-reviewer.json",
+      "writers": []
+    },
     {
       "readers": [
         {
@@ -719,6 +1102,36 @@
         }
       ],
       "target": "site/src/content/docs/handbook",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "test/contracts.test.ts",
+          "call": "readdirSync",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "test/fixtures",
+      "writers": []
+    },
+    {
+      "readers": [
+        {
+          "by": "test/contracts.test.ts",
+          "call": "literal",
+          "confidence": "ast",
+          "fromTests": true
+        },
+        {
+          "by": "test/contracts.test.ts",
+          "call": "readFileSync",
+          "confidence": "ast",
+          "fromTests": true
+        }
+      ],
+      "target": "test/fixtures/bundle-weak.json",
       "writers": []
     }
   ],
