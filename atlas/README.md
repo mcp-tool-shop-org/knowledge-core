@@ -1,24 +1,19 @@
 # knowledge-core: how it works
 
-Mapped at 2026-09-30 from commit a03320f by Atlas 1.24.0.
+Mapped at 2026-10-01 from commit ba4ad42 by Atlas 1.24.0.
 
 ## What this is
 
 6 parts, mostly TypeScript (17 files), CSS (2), Astro (1) and JavaScript (1). Work enters through 3 doors; the busiest is CI, which reaches 2 parts. It deploys a site to GitHub Pages.
 
-## What changed since 2026-09-23 (274af45)
+## What changed since 2026-09-30 (a03320f)
 
-- CI's pull request trigger now also names `atlas/**` and `codecov.yml`.
-- CI's push trigger now also names `atlas/**` and `codecov.yml`.
-- knowledge/corpus/fixtures/corpus-divergence.json is now read by test/pipeline.test.ts.
-- knowledge/roles/ is now read by test/contracts.test.ts and test/pipeline.test.ts.
-- knowledge/roles/competitive-analyst.json is now read by test/pipeline.test.ts.
-- And 6 more new writers and readers of places.
-- 1 file added and 56 changed content, across 6 parts.
+- CI's pull request trigger no longer names `.github/workflows/**`, `atlas/**`, `codecov.yml`, `package.json`, `site/astro.config.mjs`, `site/package-lock.json`, `site/package.json`, `src/**`, `test/**` and `tsconfig.json`.
+- 1 file changed content, across 1 part.
 
 ## What comes in
 
-1. **CI.** On a pull request touching 10 paths; on a push touching 10 paths; or by hand. Runs test/; checks src/.
+1. **CI.** On a pull request; on a push touching 10 paths; or by hand. Runs test/; checks src/.
 2. **Deploy site to GitHub Pages.** On a push to main touching 2 paths; or by hand. Runs site/astro.config.mjs and site/src/.
 3. **@roleos/knowledge-core** (the package's entry, not published from here). Loads src/index.ts.
 
